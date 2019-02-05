@@ -1,0 +1,8 @@
+#!$PREFIX/bin/bash
+pkg up -y
+termux-setup-storage
+pkg install apache2 -y
+rm $PREFIX/etc/apache2/httpd.conf
+rm httpd.conf $PREFIX/etc/apache2/
+rm $PREFIX/bin/apachectl
+mv apachectl $PREFIX/bin/
