@@ -1,8 +1,10 @@
 #!$PREFIX/bin/bash
 pkg up -y
 termux-setup-storage
+mkdir /sdcard/htdocs
 pkg install apache2 -y
 rm $PREFIX/etc/apache2/httpd.conf
-rm httpd.conf $PREFIX/etc/apache2/
+mv httpd.conf $PREFIX/etc/apache2/
 rm $PREFIX/bin/apachectl
+chmod +x apachectl
 mv apachectl $PREFIX/bin/
