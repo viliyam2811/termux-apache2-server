@@ -48,6 +48,7 @@ HTTPD='/data/data/com.termux/files/usr/bin/httpd'
 if test -f /data/data/com.termux/files/usr/bin/envvars; then
   . /data/data/com.termux/files/usr/bin/envvars
 fi
+[ -f $PREFIX/var/run/apache2/httpd.pid ] && rm $PREFIX/var/run/apache2/httpd.pid
 #
 # a command that outputs a formatted text version of the HTML at the
 # url given on the command line.  Designed for lynx, however other
@@ -101,5 +102,14 @@ fullstatus)
     $HTTPD "$@"
     ERROR=$?
 esac
+
+if [ $ERROR -eq 0 ]
+then
+    termux-open-url https://localhost:8080/
+else
+    echo "There is problem with Apache2 Server or may the Server is already Running.."
+    echo "Check it in your browser https://localhost:8080/"
+fi
+
 
 exit $ERROR
