@@ -8,3 +8,5 @@ mv httpd.conf $PREFIX/etc/apache2/
 rm $PREFIX/bin/apachectl
 chmod +x apachectl
 mv apachectl $PREFIX/bin/
+clear
+echo "Setup Completed Run apachectl to Start Apache2 Server"
