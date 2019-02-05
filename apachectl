@@ -105,10 +105,10 @@ esac
 
 if [ $ERROR -eq 0 ]
 then
-    termux-open-url https://localhost:8080/
+    termux-open-url http://localhost:8080/
 else
     echo "There is problem with Apache2 Server or may the Server is already Running.."
-    echo "Check it in your browser https://localhost:8080/"
+    echo "Check it in your browser http://localhost:8080/"
 fi
 
 
