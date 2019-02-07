@@ -49,7 +49,7 @@ if test -f /data/data/com.termux/files/usr/bin/envvars; then
   . /data/data/com.termux/files/usr/bin/envvars
 fi
 [ -f $PREFIX/var/run/apache2/httpd.pid ] && rm $PREFIX/var/run/apache2/httpd.pid
-if [ !-d /sdcard/htdocs ]
+if [ ! -d /sdcard/htdocs ]
 then
     mkdir /sdcard/htdocs
 fi
