@@ -11,3 +11,5 @@ chmod +x apachectl
 mv apachectl $PREFIX/bin/
 clear
 echo "Setup Completed Run apachectl to Start Apache2 Server"
+echo "Your Document Root is /sdcard/htdocs"
+echo "place your web documents in /sdcard/htdocs"
