@@ -1,5 +1,4 @@
 #!$PREFIX/bin/bash
-cd $HOME
 pkg up -y
 termux-setup-storage
 sleep 5
