@@ -109,10 +109,14 @@ esac
 
 if [ $ERROR -eq 0 ]
 then
+    cls
     termux-open-url http://localhost:8080/
 else
-    echo "There is problem with Apache2 Server or may the Server is already Running.."
-    echo "Check it in your browser http://localhost:8080/"
+    cls
+    echo "Address Already in use..."
+    echo "trying to ping http://localhost:8080/"
+    sleep 3
+    termux-open-url http://localhost:8080/
 fi
 
 
