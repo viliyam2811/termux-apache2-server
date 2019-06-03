@@ -1,13 +1,28 @@
 #!$PREFIX/bin/bash
-pkg up -y
+
+pkg update && pkg upgrade -y
+
 termux-setup-storage
+
 sleep 5
-mkdir /sdcard/htdocs
+
+htdocs='/sdcard/htdocs'
+if [ ! -d $htdocs ];
+then
+  mkdir $htdocs
+fi
+
 pkg install apache2 -y
+
 rm $PREFIX/etc/apache2/httpd.conf
+
 mv httpd.conf $PREFIX/etc/apache2/
+
 rm $PREFIX/bin/apachectl
+
 chmod +x apachectl
+
 mv apachectl $PREFIX/bin/
+
 clear
 apachectl
