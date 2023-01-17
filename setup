@@ -18,6 +18,8 @@ rm $PREFIX/etc/apache2/httpd.conf
 
 mv httpd.conf $PREFIX/etc/apache2/
 
+mv index.html /sdcard/htdocs/
+
 rm $PREFIX/bin/apachectl
 
 chmod +x apachectl
