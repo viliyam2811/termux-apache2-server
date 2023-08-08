@@ -6,4 +6,6 @@
 <code>
 pkg install git -y && cd ~/ && git clone https://github.com/viliyam2811/termux-apache2-server && cd ~/termux-apache2-server && bash setup && cd ~/ && rm -rf termux-apache2-server
 </code>
-<a href="https://www.easymux.in/how-to-install-apache2-on-android-and-configure-termux/" rel="dofollow">Learn more</a>
+##For PHP-Apache Setup In Termux
+Apache Alone is worthless so pfefer 
+<a href="https://www.easymux.in/how-to-configure-php-apache-to-run-php-scripts-in-apache2-server-in-termux/)https://www.easymux.in/how-to-configure-php-apache-to-run-php-scripts-in-apache2-server-in-termux/" rel="dofollow">PHP-Apache Installation</a>
