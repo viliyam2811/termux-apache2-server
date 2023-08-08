@@ -9,4 +9,4 @@ pkg install git -y && cd ~/ && git clone https://github.com/viliyam2811/termux-a
 
 <h3>For PHP-Apache Setup In Termux</h3>
 Apache Alone is worthless so pfefer 
-<a href="https://www.easymux.in/how-to-configure-php-apache-to-run-php-scripts-in-apache2-server-in-termux/)https://www.easymux.in/how-to-configure-php-apache-to-run-php-scripts-in-apache2-server-in-termux/" rel="dofollow">PHP-Apache Installation</a>
+<a href="https://www.easymux.in/how-to-configure-php-apache-to-run-php-scripts-in-apache2-server-in-termux/" rel="dofollow">PHP-Apache Installation</a>
